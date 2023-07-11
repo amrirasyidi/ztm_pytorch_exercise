@@ -161,4 +161,5 @@ cython_debug/
 
 # additional
 *.zip
+*.code-workspace
 /data
