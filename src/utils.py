@@ -12,6 +12,8 @@ from PIL import Image
 import torch
 from torchvision import transforms
 
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
 def reorganize_folder_structure(
         source_folder,
         destination_folder,
@@ -163,3 +165,4 @@ def pred_and_plot_image(model: torch.nn.Module,
         """
     )
     plt.axis(False)
+    
